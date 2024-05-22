@@ -36,7 +36,7 @@ const isAdminAuthenticated = (req, res, next) => {
     }
 };
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname,'..', 'frontend', 'login.html'));
+    res.sendFile(path.join(__dirname,'..', 'frontend', 'index.html'));
 });
 // Middleware to check if the user is authenticated
 const isAuthenticated = (req, res, next) => {
